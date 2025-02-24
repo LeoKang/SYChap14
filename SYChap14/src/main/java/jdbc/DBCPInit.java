@@ -46,6 +46,7 @@ public class DBCPInit extends HttpServlet {
 
 			GenericObjectPool<PoolableConnection> connectionPool = new GenericObjectPool<>(poolableConnFactory,
 					poolConfig);
+			poolableConnFactory.setPool(connectionPool);
 
 			Class.forName("org.apache.commons.dbcp2.PoolingDriver");
 			PoolingDriver driver = (PoolingDriver) DriverManager.getDriver("jdbc:apache:commons:dbcp:");
