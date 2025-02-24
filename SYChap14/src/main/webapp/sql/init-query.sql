@@ -4,7 +4,12 @@ SELECT * FROM MEMBER_HISTORY
 
 INSERT INTO MEMBER_HISTORY
 VALUES ('madvirus', '2015스프링4프로그래밍입문<br>' || '2013 Spring4.0프로그래밍<br>'
-|| '2012 객체지향과 디자인 패턴<br>' || '2012 JSP 2.2웹프로그래밍\n');
+|| '2012 객체지향과 디자인 패턴<br>' || '2012 JSP 2.2웹프로그래밍');
+
+CREATE TABLE MEMBER_HISTORY (
+MEMBERID VARCHAR2(10) PRIMARY KEY,
+HISTORY VARCHAR2(250) 
+)
 
 SELECT * FROM MEMBER
 
