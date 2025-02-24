@@ -3,7 +3,7 @@
 <%@ page import="java.sql.*"%>
 <%@ page import="java.io.*"%>
 <%
-String memberID = request.getParameter("memberID");
+String memberID = request.getParameter("memberid");
 %>
 <!DOCTYPE html>
 <html>
